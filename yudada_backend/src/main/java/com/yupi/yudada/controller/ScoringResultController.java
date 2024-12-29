@@ -61,10 +61,9 @@ public class ScoringResultController {
         BeanUtils.copyProperties(scoringResultAddRequest, scoringResult);
         List<String> resultProp = scoringResultAddRequest.getResultProp();
         scoringResult.setResultProp(JSONUtil.toJsonStr(resultProp));
-
         // 数据校验
         scoringResultService.validScoringResult(scoringResult, true);
-        // todo 填充默认值
+        // 填充默认值
         User loginUser = userService.getLoginUser(request);
         scoringResult.setUserId(loginUser.getId());
         // 写入数据库

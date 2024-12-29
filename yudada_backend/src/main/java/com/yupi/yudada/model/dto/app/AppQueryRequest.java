@@ -1,6 +1,5 @@
 package com.yupi.yudada.model.dto.app;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.yupi.yudada.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -77,8 +76,5 @@ public class AppQueryRequest extends PageRequest implements Serializable {
      */
     private String searchText;
 
-
-
-    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

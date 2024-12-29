@@ -1,6 +1,5 @@
 package com.yupi.yudada.model.dto.app;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -65,7 +64,5 @@ public class AppUpdateRequest implements Serializable {
      */
     private Date reviewTime;
 
-
-    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

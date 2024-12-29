@@ -13,7 +13,6 @@ import java.io.Serializable;
 @Data
 public class AppAddRequest implements Serializable {
 
-
     /**
      * 应用名
      */
@@ -38,7 +37,6 @@ public class AppAddRequest implements Serializable {
      * 评分策略（0-自定义，1-AI）
      */
     private Integer scoringStrategy;
-
 
     private static final long serialVersionUID = 1L;
 }

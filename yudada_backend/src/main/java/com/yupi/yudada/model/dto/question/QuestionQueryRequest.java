@@ -1,10 +1,13 @@
 package com.yupi.yudada.model.dto.question;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.yupi.yudada.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,7 +28,7 @@ public class QuestionQueryRequest extends PageRequest implements Serializable {
     /**
      * 题目内容（json格式）
      */
-    private List<QuestionContentDTO> questionContent;
+    private String questionContent;
 
     /**
      * 应用 id
@@ -41,5 +44,6 @@ public class QuestionQueryRequest extends PageRequest implements Serializable {
      * id
      */
     private Long notId;
+
     private static final long serialVersionUID = 1L;
 }

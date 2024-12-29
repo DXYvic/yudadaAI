@@ -1,6 +1,5 @@
 package com.yupi.yudada.model.dto.app;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -13,7 +12,6 @@ import java.io.Serializable;
  */
 @Data
 public class AppEditRequest implements Serializable {
-
     /**
      * id
      */
@@ -44,9 +42,5 @@ public class AppEditRequest implements Serializable {
      */
     private Integer scoringStrategy;
 
-
-
-
-    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

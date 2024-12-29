@@ -1,11 +1,12 @@
 package com.yupi.yudada.model.dto.userAnswer;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.yupi.yudada.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,7 +20,7 @@ import java.util.List;
 public class UserAnswerQueryRequest extends PageRequest implements Serializable {
 
     /**
-     * id
+     *
      */
     private Long id;
 
@@ -82,8 +83,6 @@ public class UserAnswerQueryRequest extends PageRequest implements Serializable 
      * 搜索词
      */
     private String searchText;
-
-
 
     private static final long serialVersionUID = 1L;
 }

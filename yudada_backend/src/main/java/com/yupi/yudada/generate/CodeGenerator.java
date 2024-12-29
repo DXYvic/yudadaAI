@@ -15,6 +15,8 @@ import java.io.Writer;
 /**
  * 代码生成器
  *
+ * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 public class CodeGenerator {
 
@@ -28,9 +30,9 @@ public class CodeGenerator {
     public static void main(String[] args) throws TemplateException, IOException {
         // 指定生成参数
         String packageName = "com.yupi.yudada";
-        String dataName = "评分结果";
-        String dataKey = "scoringResult";
-        String upperDataKey = "ScoringResult";
+        String dataName = "用户答案";
+        String dataKey = "userAnswer";
+        String upperDataKey = "UserAnswer";
 
         // 封装生成参数
         Map<String, Object> dataModel = new HashMap<>();

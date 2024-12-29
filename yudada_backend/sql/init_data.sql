@@ -121,10 +121,10 @@ VALUES (19, '继续加油！', '还需努力哦', null, null, 0, '2024-04-25 15:
 
 -- 用户回答表初始数据
 INSERT INTO user_answer (id, appId, appType, choices, resultId, resultName, resultDesc, resultPicture, resultScore,
-                         scoringStrategy, userId, createTime, updateTime, isDelete)
+                              scoringStrategy, userId, createTime, updateTime, isDelete)
 VALUES (1, 1, 1, '["A","A","A","B","A","A","A","B","B","A"]', 1, 'ISTJ（物流师）', '忠诚可靠，被公认为务实，注重细节。', 'icon_url_istj',
         null, 0, 1, '2024-05-09 15:08:22', '2024-05-09 15:10:13', 0);
 INSERT INTO user_answer (id, appId, appType, choices, resultId, resultName, resultDesc, resultPicture, resultScore,
-                         scoringStrategy, userId, createTime, updateTime, isDelete)
+                              scoringStrategy, userId, createTime, updateTime, isDelete)
 VALUES (2, 2, 0, '["D","C","B","D","A","C","C","B","C","A"]', 17, '首都知识大师', '你真棒棒哦，首都知识非常出色！', null, 10, 0, 1,
         '2024-05-09 15:08:36', '2024-05-09 15:10:13', 0);

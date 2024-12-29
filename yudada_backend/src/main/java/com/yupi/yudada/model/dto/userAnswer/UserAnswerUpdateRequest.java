@@ -24,12 +24,10 @@ public class UserAnswerUpdateRequest implements Serializable {
      */
     private Long appId;
 
-
     /**
      * 用户答案（JSON 数组）
      */
     private List<String> choices;
-
 
     private static final long serialVersionUID = 1L;
 }
